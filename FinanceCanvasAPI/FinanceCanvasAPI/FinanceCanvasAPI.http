@@ -1,0 +1,6 @@
+@FinanceCanvasAPI_HostAddress = http://localhost:5229
+
+GET {{FinanceCanvasAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
