@@ -66,9 +66,9 @@ msbuild.log
 
 # Local data or configuration
 # Exclude local settings files (e.g., secrets that shouldn't be committed)
-appsettings.*.Development.json
-appsettings.Local.json
-launchSettings.json
+# appsettings.*.Development.json
+# appsettings.Local.json
+# launchSettings.json
 # Note: Be careful excluding all 'appsettings*.json'. You usually want to commit the base file.
 # The lines above specifically target local/development override files.
 

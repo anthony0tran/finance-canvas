@@ -6,9 +6,12 @@ public static class LiteDbFactory
 {
     public static LiteDatabase Create(string password)
     {
-        var dataDir = Path.Combine(Environment.CurrentDirectory, "data");
+        var dataDir = Environment.GetEnvironmentVariable("LITEDB_DATA_DIR") 
+                      ?? (OperatingSystem.IsWindows() 
+                          ? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "FinanceCanvasAPI", "data") 
+                          : "/data");
         Directory.CreateDirectory(dataDir);
-        
+
         var connectionString = new ConnectionString
         {
             Filename = Path.Combine(dataDir, "secure.ldb"),
