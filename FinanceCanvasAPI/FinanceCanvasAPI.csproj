@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>94F94778-80D6-4A9C-B305-BC6271FB0C87</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -20,6 +21,12 @@
         </PackageReference>
         <PackageReference Include="Scalar.AspNetCore" Version="2.9.0" />
         <PackageReference Include="SQLitePCLRaw.bundle_sqlcipher" Version="1.1.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>
