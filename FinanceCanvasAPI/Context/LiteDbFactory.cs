@@ -10,6 +10,7 @@ public static class LiteDbFactory
                       ?? (OperatingSystem.IsWindows() 
                           ? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "FinanceCanvasAPI", "data") 
                           : "/data");
+        
         Directory.CreateDirectory(dataDir);
 
         var connectionString = new ConnectionString
@@ -17,6 +18,7 @@ public static class LiteDbFactory
             Filename = Path.Combine(dataDir, "secure.ldb"),
             Password = password
         };
+        
         return new LiteDatabase(connectionString);
     }
 }
