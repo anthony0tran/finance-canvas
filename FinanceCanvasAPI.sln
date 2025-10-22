@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceCanvasAPI", "FinanceCanvasAPI\FinanceCanvasAPI.csproj", "{023B7559-A452-4343-A8B3-AB6CF2BB4536}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceCanvaseAPI.Tests", "FinanceCanvaseAPI.Tests\FinanceCanvaseAPI.Tests.csproj", "{4F538A9F-4582-4028-8629-A66F02C45A43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceCanvasAPI.Tests", "FinanceCanvasAPI.Tests\FinanceCanvasAPI.Tests.csproj", "{4F538A9F-4582-4028-8629-A66F02C45A43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

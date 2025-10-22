@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
-
-namespace FinanceCanvaseAPI.Tests;
+﻿namespace FinanceCanvasAPI.Tests;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
